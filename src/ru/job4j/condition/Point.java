@@ -14,6 +14,8 @@ public class Point {
         System.out.println("result (0, 0) to (5, 6) " + result);
 
         System.out.println("result (4, 2) to (2, 8) " + Point.distance(4, 2, 2, 8));
+
+        System.out.println("result (4, 2) to (2, 8) " + Point.distance(6, 9, 1, 6));
     }
 
 }
