@@ -31,4 +31,12 @@ public class DummyBotTest {
         );
     }
 
+    @Test
+    public void whenUnknownBotHello() {
+        assertThat(
+                DummyBot.answer("Привет, Бот"),
+                is("Это ставит меня в тупик. Задайте другой вопрос.")
+        );
+    }
+
 }
