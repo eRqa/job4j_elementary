@@ -14,10 +14,7 @@ public class Machine {
 
         for (int i = 0; i < COINS.length; i++) {
 
-            while (change != 0) {
-                if (change - COINS[i] < 0) {
-                    break;
-                }
+            while (change - COINS[i] >= 0) {
 
                 rsl[size] = COINS[i];
                 size++;
