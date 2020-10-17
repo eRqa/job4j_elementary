@@ -7,4 +7,10 @@ public class Max {
         return result;
     }
 
+    public static int max(int left, int right, int anotherOne) {
+        int maxLeftOrRight = max(left, right);
+        int result = maxLeftOrRight > anotherOne ? maxLeftOrRight : anotherOne;
+        return result;
+    }
+
 }

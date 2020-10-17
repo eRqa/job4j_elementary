@@ -29,4 +29,34 @@ public class MaxTest {
         int result = Max.max(1, 1);
         assertThat(result, is(1));
     }
+
+    @Test
+    public void whenA1B1C1ThenAny() {
+        int result = Max.max(1, 1, 1);
+        assertThat(result, is(1));
+    }
+
+    @Test
+    public void whenA1B10C20ThenC() {
+        int result = Max.max(1, 10, 20);
+        assertThat(result, is(20));
+    }
+
+    @Test
+    public void whenA1B10C4ThenB() {
+        int result = Max.max(1, 10, 4);
+        assertThat(result, is(10));
+    }
+
+    @Test
+    public void whenA10B2C4ThenA() {
+        int result = Max.max(10, 2, 4);
+        assertThat(result, is(10));
+    }
+
+    @Test
+    public void whenA10B10C4ThenAOrB() {
+        int result = Max.max(10, 10, 4);
+        assertThat(result, is(10));
+    }
 }
