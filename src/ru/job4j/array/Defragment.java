@@ -4,17 +4,13 @@ package ru.job4j.array;
         public static String[] compress(String[] array) {
             for (int index = 0; index < array.length; index++) {
                 if (array[index] == null) {
-
                     for (int j = index + 1; j < array.length; j++) {
                         if (array[j] != null) {
                             SwitchArray.swapStringArray(array, j, index);
                             break;
                         }
                     }
-
                 }
-
-                //System.out.print(array[index] + " ");
             }
             return array;
         }
