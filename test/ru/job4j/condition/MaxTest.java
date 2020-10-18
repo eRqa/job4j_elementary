@@ -59,4 +59,16 @@ public class MaxTest {
         int result = Max.max(10, 10, 4);
         assertThat(result, is(10));
     }
+
+    @Test
+    public void whenA10B10C4D55ThenD() {
+        int result = Max.max(10, 10, 4, 55);
+        assertThat(result, is(55));
+    }
+
+    @Test
+    public void whenA100B10C4D5ThenA() {
+        int result = Max.max(100, 10, 4, 5);
+        assertThat(result, is(100));
+    }
 }
