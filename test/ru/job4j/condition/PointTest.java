@@ -60,4 +60,18 @@ public class PointTest {
         Assert.assertEquals(expected, act, 0.01);
 
     }
+
+    @Test
+    public void testWhen342And567Then5744() {
+
+        Point a = new Point(3, 4, 2);
+        Point b = new Point(5, 6, 7);
+
+        double expected = 5.74;
+
+        double act = a.distance3d(b);
+
+        Assert.assertEquals(expected, act, 0.01);
+
+    }
 }
